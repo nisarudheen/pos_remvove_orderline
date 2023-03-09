@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+   <t t-name="OrderLine" t-inherit="point_of_sale.Orderline" t-inherit-mode="extension" owl="1">
+     <xpath expr="//li[hasclass('orderline')]" position="inside">
+          <div class="control-button" style="color:red" t-on-click="clear_line">
+          <i class="fa fa-trash"></i>
+      </div>
+
+      </xpath>
+   </t>
+</templates>
